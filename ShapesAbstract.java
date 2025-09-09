@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.awt.*;
 
 
@@ -23,7 +22,7 @@ class Circle extends Shape {
     }
 
     void draw(Graphics g) {
-        g.setColor(color); // Assuming color is Red for simplicity
+        g.setColor(color);
         g.fillOval(100, 100, (int)(2 * radius), (int)(2 * radius));
         
     }
@@ -45,7 +44,7 @@ class Rectangle extends Shape {
     }
 
     void draw(Graphics g) {
-        g.setColor(color); // Assuming color is Blue for simplicity
+        g.setColor(color);
         g.fillRect(200, 200, (int)width, (int)height);
         
     }
