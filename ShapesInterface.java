@@ -52,3 +52,27 @@ class Rectangle implements Calculable, Drawable {
     }
 }
 
+class Triangle implements Calculable, Drawable {
+    private double base;
+    private double height;
+    Color color;
+    String name;
+
+    public Triangle(String name, Color color, double base, double height) {
+        this.name = name;
+        this.color = color;
+        this.base = base;
+        this.height = height;
+    }
+
+    @Override public double calculateArea() {
+        return 0.5 * base * height;
+    }
+
+    @Override public void draw(Graphics g) {
+        g.setColor(color);
+        int[] xPoints = {300, 300 + (int)(base / 2), 300 - (int)(base / 2)};
+        int[] yPoints = {300, 300 + (int)height, 300 + (int)height};
+        g.fillPolygon(xPoints, yPoints, 3);
+    }
+}

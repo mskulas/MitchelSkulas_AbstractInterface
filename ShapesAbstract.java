@@ -50,3 +50,26 @@ class Rectangle extends Shape {
     }
 }
 
+class Triangle extends Shape {
+    double base;
+    double height;
+
+    Triangle(String name, Color color, double base, double height) {
+        this.name = name;
+        this.color = color;
+        this.base = base;
+        this.height = height;
+    }
+
+    double getArea() {
+        return 0.5 * base * height;
+    }
+
+    void draw(Graphics g) {
+        g.setColor(color);
+        int[] xPoints = {300, (int)(300 + base), (int)(300 + base / 2)};
+        int[] yPoints = {300, 300, (int)(300 - height)};
+        g.fillPolygon(xPoints, yPoints, 3);
+        
+    }
+}

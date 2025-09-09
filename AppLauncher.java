@@ -13,10 +13,13 @@ public class AppLauncher {
             public void paintComponent(Graphics g) {
                 Shape circle = new Circle("MyCircle", Color.RED, 50.0);
                 Shape rectangle = new Rectangle("MyRectangle", Color.BLUE, 100.0, 50.0);
+                Shape triangle = new Triangle("MyTriangle", Color.GREEN, 80.0, 60.0);
                 circle.draw(g);
                 rectangle.draw(g);
+                triangle.draw(g);
                 System.out.println("Area: " + circle.getArea());
                 System.out.println("Area: " + rectangle.getArea());
+                System.out.println("Area: " + triangle.getArea());
             }
         };
         frame.add(panel);
