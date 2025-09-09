@@ -1,0 +1,15 @@
+Abstract pros:
+- Easier to conceptualize
+- Feel like it does more to set up a framework for classes
+Abstract Cons:
+- Less flexible
+- Fixed methods and attributes
+
+Interface pros:
+- Modular, more flexible
+- Polymorphism is easier to implement
+Interface cons:
+- You have to define the framework for every class
+- Less substantial when setting up a template for classes
+
+AI Reflection: It was just the autocomplete. Took it line by line. I didn't prompt it at all so it would recommend something and I'd accept or fix it. It did weird things occasionally like say it was drawing a thing and then not actually doing it.
